@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>KALKULATOR</h1>
+        <form name="form">
+        <input class="textarea" name="textarea">
+        </form>
+        <div class="calculator-keys">
+            <input class="operator" type="button" value="C" onclick="clean()">
+			<input class="operator" type="button" value="Del" onclick="back()">
+			<input class="operator" type="button" value="/" onclick="insert(' / ')">
+            <input class="operator" type="button" value="%" onclick="insert(' % ')">
+        </div>
+        <div class="row">
+            <input class="button" type="button" value="7" onclick="insert(7)">
+			<input class="button" type="button" value="8" onclick="insert(8)">
+			<input class="button" type="button" value="9" onclick="insert(9)">
+            <input class="operator" type="button" value="x" onclick="insert(' * ')">
+        </div>
+        <div class="row">
+            <input class="button" type="button" value="4" onclick="insert(4)">
+			<input class="button" type="button" value="5" onclick="insert(5)">
+			<input class="button" type="button" value="6" onclick="insert(6)">
+            <input class="operator" type="button" value="-" onclick="insert(' - ')">
+        </div>
+        <div class="row">
+            <input class="button" type="button" value="1" onclick="insert(1)">
+			<input class="button" type="button" value="2" onclick="insert(2)">
+			<input class="button" type="button" value="3" onclick="insert(3)">
+            <input class="operator" type="button" value="+" onclick="insert(' + ')">
+        </div>
+        <div class="row">
+            <input class="button" type="button" value="0" onclick="insert(0)">
+			<input class="button" type="button" value="00" onclick="insert('00')">
+			<input class="button" type="button" value="." onclick="insert('.')">
+            <input class="equal-sign" type="button" value="=" onclick="equal()">
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
